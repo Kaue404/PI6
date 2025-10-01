@@ -9,7 +9,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Game List",
-  description: "An app for recommending games to play",
+  description: "An app for game recommendations",
 };
 
 export default function RootLayout({

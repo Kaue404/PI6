@@ -1,11 +1,11 @@
-import Input from "@/components/Input";
-import Button from "@/components/Button";
+import Input from "@/components/atoms/Input";
+import Button from "@/components/atoms/Button";
 import Image from "next/image";
 
 export default function LoginPage() {
   return (
     <div className="min-h-screen bg-[#1A1A1A] text-[#eeeedd] relative">
-      <div className="absolute top-4 right-4">
+      <div className="absolute top-2 right-4">
         <Image
           src={"/Icon.svg"}
           width={48}
@@ -14,7 +14,7 @@ export default function LoginPage() {
           quality={100}
         />
       </div>
-      <div className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6">
+      <div className="mx-auto flex min-h-screen max-w-lg flex-col justify-center px-6">
         <div className="space-y-5">
           <div className="space-y-2 text-center">
             <h1 className="text-3xl font-bold text-[#05DBF2]">

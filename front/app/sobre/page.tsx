@@ -1,6 +1,6 @@
 import Header from "@/components/molecules/Header";
 
-export default function UserPage() {
+export default function About() {
   return (
     <>
       <Header />
