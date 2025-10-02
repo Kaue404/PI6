@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #1A1A1A;
+  --background: #1a1a1a;
   --foreground: #eeeedd;
-  --color-primary: #05DBF2;
-  --color-secondary: #0788D9;
+  --color-primary: #05dbf2;
+  --color-secondary: #0788d9;
   --color-muted: #999999;
 }
 
@@ -21,4 +21,19 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
+}
+
+@keyframes gradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 3s ease infinite;
 }

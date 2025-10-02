@@ -148,7 +148,9 @@ export default function SignUpPage() {
               </div>
             </div>
 
-            <Button type="submit">Criar Conta</Button>
+            <Button type="submit" className="rounded-md p-2">
+              Criar Conta
+            </Button>
           </form>
 
           <footer className="text-center text-sm text-[#999999]">

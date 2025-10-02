@@ -1,4 +1,5 @@
-import Header from "@/components/molecules/Header";
+import Footer from "@/components/organisms/Footer";
+import Header from "@/components/organisms/Header";
 
 export default function UserPage() {
   return (
@@ -7,6 +8,7 @@ export default function UserPage() {
       <div className="pt-16">
         Hello World
       </div>
+      <Footer />
     </>
   );
 }

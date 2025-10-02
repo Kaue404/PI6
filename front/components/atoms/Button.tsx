@@ -15,7 +15,7 @@ export default function Button({
   return (
     <button
       className={clsx(
-        "w-full rounded-md px-4 py-2 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#1A1A1A] cursor-pointer hover:text-white",
+        "w-full font-semibold transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#1A1A1A] cursor-pointer hover:text-white",
         variant === "primary"
           ? "bg-[#05DBF2] text-[#1A1A1A] hover:bg-[#05DBF2]/90 focus:ring-[#05DBF2]"
           : "bg-[#0788D9] text-[#eeeedd] hover:bg-[#0788D9]/90 focus:ring-[#0788D9]",

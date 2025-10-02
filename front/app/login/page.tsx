@@ -39,7 +39,7 @@ export default function LoginPage() {
               placeholder="SuaSenhaSecreta123"
               autoComplete="current-password"
             />
-            <Button type="submit" >
+            <Button type="submit" className="rounded-md p-2">
               Entrar
             </Button>
           </form>

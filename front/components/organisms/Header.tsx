@@ -8,6 +8,7 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
+import DropDown from "../molecules/DropDown";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,8 +19,13 @@ export default function Header() {
     { href: "/sobre", label: "Sobre" },
   ];
 
+  const userMenuItems = [
+    { label: "Perfil", href: "/usuario" },
+    { label: "Sair", href: "/login" },
+  ];
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#1A1A1A] shadow-md">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0f0f0f] shadow-md">
       <div className="container px-4">
         <div className="flex h-16 items-center">
           <button
@@ -47,13 +53,10 @@ export default function Header() {
               ))}
             </nav>
 
-            <Link
-              href="/usuario"
-              className="text-[#eeeedd] hover:text-[#05DBF2] transition-colors"
-              aria-label="Perfil do usuário"
-            >
-              <UserIcon className="h-6 w-6" />
-            </Link>
+            <DropDown
+              trigger={<UserIcon className="h-6 w-6" />}
+              items={userMenuItems}
+            />
 
             <Link
               href="/"
