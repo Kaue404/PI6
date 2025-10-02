@@ -65,7 +65,7 @@ export default function Home() {
   ];
 
   const handleGameClick = (gameId: number) => {
-    router.push(`/jogos/${gameId}`);
+    router.push(`/jogo/${gameId}`);
   };
 
   const handleExploreMore = () => {

@@ -29,7 +29,7 @@ export default function GamesPage() {
   );
 
   const handleGameClick = (gameId: number) => {
-    router.push(`/jogos/${gameId}`);
+    router.push(`/jogo/${gameId}`);
   };
 
   return (
